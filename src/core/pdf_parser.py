@@ -22,4 +22,6 @@ def extract_text_from_pdf(pdf_path: str) -> str:
 def parse_liturgical_content(text: str) -> List[Dict[str, Any]]:
     """Parse liturgical content from extracted text."""
     # TODO: Implement parsing logic
-    return [] 
+    return []
+
+

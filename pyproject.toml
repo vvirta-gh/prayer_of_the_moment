@@ -5,14 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "pypdf>=4.0.0", # Korvataan PyPDF2
+    "pdfplumber>=0.10.0",
+    "loguru>=0.7.0",
     "click>=8.2.1",
-    "docker>=7.1.0",
-    "loguru>=0.7.3",
-    "psycopg2-binary>=2.9.10",
-    "pypdf2>=3.0.1",
-    "pytest>=8.4.1",
-    "python-dotenv>=1.1.1",
-    "sqlalchemy>=2.0.41",
 ]
 
 [build-system]
@@ -25,3 +21,8 @@ packages = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
