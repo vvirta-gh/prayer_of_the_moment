@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from loguru import logger
-from cli.cli import cli
+from src.cli.cli import cli
 
 
 if __name__ == "__main__":

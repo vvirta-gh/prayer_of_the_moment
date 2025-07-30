@@ -5,6 +5,7 @@ import click
 def cli():
     pass
 
+
 @cli.command()
 @click.option("--name", prompt="Your name", help="The name of the person to greet.")
 def hello(name):
